@@ -29,6 +29,8 @@ class MiJuego(arcade.Window):
         arcade.draw_circle_filled(300+self.pos_x,350,100,arcade.color.RED_DEVIL)
         arcade.draw_lbwh_rectangle_filled(400+self.pos_x,300,60,60,arcade.color.WHITE_SMOKE)
         arcade.draw_lbwh_rectangle_filled(125+self.pos_x,300,60,60,arcade.color.WHITE_SMOKE)
+        arcade.draw_lbwh_rectangle_filled(100+self.pos_x,275,400,20,arcade.color.CONGO_PINK)
+        arcade.draw_circle_filled(30,575,75,arcade.color.YELLOW_ORANGE)
         # Cambiar la posición y/o tamaño del dibujo para crear animación
         
 
