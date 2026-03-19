@@ -16,6 +16,7 @@ preguntas_txt=[
 "¿Cuántos continentes hay?|7|5|6|3",
 "¿Qué lenguaje se usa para programar en Arcade?|Python|Java|JavaScript|C",
 "¿La tortilla de patata lleva cebolla?|Sí|Jamás|No con excepciones|Tal vez",
+"¿Cuál es el rio más caudaloso de España?|Ebro|Tajo|Guadalquivir|Duero",
 ]
 puntos=0
 opciones=["a","b","c","d"]
@@ -49,5 +50,5 @@ for partes in preguntas_txt:
         print("tonto pierdes 2 puntos")
         puntos -=2
 print("\n" + "-" * 30)
-if puntos<0:print(f"¡Fin de la partida! Eres retrasado  Tu puntuación total es: {puntos} puntos.")
-else: print(f"¡Fin de la partida! Tu puntuación total es: {puntos} puntos.")
+if puntos<0:print(f"¡Fin de la partida! Eres retrasado. Tu puntuación total es: {puntos} puntos.")
+else: print(f"¡Fin de la partida! Que gran intelecto. Tu puntuación total es: {puntos} puntos.")
