@@ -5,10 +5,10 @@ import arcade
 SPRITE_SCALING_PLAYER = 0.3
 SPRITE_SCALING_COIN = 0.03
 SPRITE_SCALING_BAD = 0.2
-COIN_COUNT = 50
+COIN_COUNT = 1000
 BAD_COUNT = 30 # Cantidad de sprites malos
 
-SCREEN_WIDTH = 800
+SCREEN_WIDTH =800
 SCREEN_HEIGHT = 600
 
 class ObjetoRebotador(arcade.Sprite):
@@ -39,7 +39,7 @@ class MyGame(arcade.Window):
         self.player_sprite = None
         self.score = 0
 
-        arcade.set_background_color(arcade.color.AMAZON)
+        arcade.set_background_color(arcade.color.BLUE_GRAY)
 
     def setup(self):
         self.player_list = arcade.SpriteList()
@@ -66,7 +66,7 @@ class MyGame(arcade.Window):
         
         # Sprites malos
         for i in range(BAD_COUNT):
-            bad_sprite = ObjetoRebotador("malo.png", SPRITE_SCALING_BAD)
+            bad_sprite = ObjetoRebotador("malo2.png", SPRITE_SCALING_BAD)
             bad_sprite.center_x = random.randrange(SCREEN_WIDTH)
             bad_sprite.center_y = random.randrange(SCREEN_HEIGHT)
             
@@ -86,7 +86,7 @@ class MyGame(arcade.Window):
         arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
         
         if len(self.good_sprite_list) == 0:
-            arcade.draw_text("GAME OVER", 250, 300, arcade.color.WHITE, 50)
+            arcade.draw_text("GAME OVER", 175, 300, arcade.color.RED_DEVIL, 75)
 
     def on_mouse_motion(self, x, y, dx, dy):
         # Solo movemos a Mario si el juego NO ha terminado
